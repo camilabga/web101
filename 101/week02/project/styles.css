@@ -1,0 +1,9 @@
+/** This is a comment that the browser will ignore,
+* Put your CSS code into this file
+*/
+
+h1 {
+    background: palevioletred; /** background color */
+    color: white; /** color of the text */
+    border: 10px solid mediumvioletred; /** border of the content */
+}

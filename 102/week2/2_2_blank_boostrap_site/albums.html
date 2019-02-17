@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+  </head>
+  
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- collapsed navbar -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed"
+                  data-toggle="collapse" data-target="#my_navbar"
+                  aria-expanded="false">Menu</button>
+        </div>
+
+        <!-- uncollapsed navbar -->
+        <div class="collapse navbar-collapse" id="my_navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="albums.html">Albums</a></li>
+            <li><a href="photos.html">All Photos</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Here are the albums!</h1>
+
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Albums</li>
+      </ol>
+
+      <div class="row">
+          <div class="col-md-4">
+            <a href="photos.html"><img src="./images/img_1.jpg" alt="graffiti cover image" style="border: 20px solid gray" width="100%" height="auto" /></a>
+          </div>
+
+          <div class="col-md-4">
+              <a href="photos.html"><img src="./images/img_2.jpg" alt="full english" style="border: 20px solid gray" width="100%" height="auto" /></a>
+          </div>
+
+          <div class="col-md-4">
+              <a href="photos.html"><img src="./images/img_3.jpg" alt="racks of cheese" style="border: 20px solid gray" width="100%" height="auto" /></a>
+          </div>
+      </div>
+
+      
+      
+      
+
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+
+    <head>
+        <title>My website with Bootstrap</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src=" http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><img src="logo.png" style="width: 100%; height: auto;" /></div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2" style="text-align: center;"><a href="index.html" style="display: inline-block; padding-top: 12px;">Home</a></div>
+                <div class="col-md-2" style="text-align: center;"><a href="index.html" style="display: inline-block; padding-top: 12px;">About me</a></div>
+                <div class="col-md-2" style="text-align: center;"><a href="index.html" style="display: inline-block; padding-top: 12px;">Contact</a></div>
+            </div>
+
+            <div class="row" >
+                    <div class="col-md-3">
+                        <img src="IMG_01.JPG" class="crop-img" onclick="slide_img()" style="width: 100%; height: auto;"/>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="IMG_02.JPG" class="crop-img" onclick="slide_img()" style="width: 100%; height: auto;"/>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="IMG_03.JPG" class="crop-img" onclick="slide_img()" style="width: 100%; height: auto;"/>
+                    </div>
+                        
+                    <div class="col-md-3">
+                        <img src="IMG_04.JPG" class="crop-img" onclick="slide_img()" style="width: 100%; height: auto;"/>
+                    </div>
+            </div>
+
+            <div class="row"><h1></h1></div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="IMG_01.JPG" id="bigImage" style="width: 100%; height: auto;"/>
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="col-md-12">
+                        <h3 id="title" onclick="legendary()" style="text-align: center;"> It's gonna be Legend... Wait for it...</h3>
+                    </div>
+            </div>
+
+        </div>
+    </body>
+
+    <script type="text/javascript">
+        function legendary(){
+            $("#title").html("... dary! Legendary!");
+
+            $("#title").click(function(){
+                $("#title").html("It's gonna be Legend... Wait for it...");
+                $("#title").off("click");
+            });
+        };
+        
+        function slide_img(){
+            $(".crop-img").click(function(){
+                $("#bigImage").attr('src',
+                    $(this).attr('src'));
+            });
+        };
+
+    </script>
+
+
+</html>
