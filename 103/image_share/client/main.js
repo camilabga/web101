@@ -34,7 +34,19 @@ var img_data = [
 
 //Template.images.helpers({images:img_data});
 
+Accounts.ui.config({
+  passwordSignupFields: "USERNAME_AND_EMAIL"
+});
+
 Template.images.helpers({images:Images.find({}, {sort:{createdOn:-1, rating:-1}})});
+
+Template.body.helpers({username:function(){
+  if (Meteor.user()) {
+    return Meteor.user().username;
+  } else {
+    return "anonymous internet user";
+  }
+}});
 
 Template.images.events({
   'click .js-image': function(event){

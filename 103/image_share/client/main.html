@@ -12,7 +12,7 @@
   </nav>
 
   <div class="container">
-    <h1>Welcome to Image Share!</h1>
+    <h1>Welcome to Image Share, {{username}}! </h1>
 
     {{> images}}
   </div> 
@@ -48,7 +48,9 @@
 </template>
 
 <template name="images">
+  {{#if currentUser}}
   <button class="btn btn-success js-show-image-form">new image</button>
+  {{/if}}
   <div class="row">
   {{#each images}}
     <div class="col-xs-12 col-md-3" id="{{_id}}">
