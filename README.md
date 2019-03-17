@@ -7,7 +7,7 @@ This repository is divided in 6 parts, as well as the specialization has 6 cours
 <ol>
   <li>Responsive Website Basics: Code with HTML, CSS, and JavaScript (101) :heavy_check_mark:</li>
   <li>Responsive web design (102) :heavy_check_mark:</li>
-  <li>Introduction to Meteor.js Development (103)</li>
+  <li>Introduction to Meteor.js Development (103) :heavy_check_mark: </li>
   <li>Web Application Development with JavaScript and MongoDB (104)</li>
   <li>Responsive Website Tutorial and Examples (105)</li>
   <li>Responsive Website Development and Design Capstone (106)</li>
